@@ -1,0 +1,94 @@
+input {
+    padding-right: 30px;
+    width: 100%;
+}
+input:focus {
+    caret-color: #13C2C2 
+    
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-family: PingFangSC-Light;
+    font-size: 18px;
+    color: #BFBFBF;
+    font-weight: 200;
+}
+.inputItemContainer {
+    width: 100%;
+    .fieldName {
+        font-size: 14px;
+        padding: 20px 0 10px 0;
+        color: #8C8C8C;
+    }
+    .inputBox {
+        display: flex;
+        justify-content: flex-start;  
+        .fieldLeft {
+            // width: 60%;
+            font-size: 18px;
+            .splitLine {
+                vertical-align: top;
+                display: inline-block;
+                width: 1px;
+                height: 21px;
+                margin-left: 5px;
+                background-color: #D9D9D9 ;
+            }
+        }
+        .inputRight {
+            position: relative;
+            width: 100%;
+            .input {
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 20px;
+                &:disabled {
+                    background-color: #fff;
+                    color: #8C8C8C;
+                }
+                // background-image: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1089874897,1268118658&fm=26&gp=0.jpg);/*设置小图标*/
+                // background-repeat: no-repeat;/*背景小图标不重复*/
+                // background-position: 100% 0px;/*小图标在input的位置*/
+                // background-size: 15px 15px;/*小图标的大小*/
+                // padding: 8px 10px 8px 40px;/*设置input内边距*/
+            }
+            .close {
+                position: absolute;
+                right: 10px;
+                top: 0;
+                color: #666666;
+                width: 10px;
+                height: 10px;
+                
+            }
+        }    
+    }
+}
+
+.line {
+    background-color: #f5f5f5;
+    height: 1px
+}
+.lineStyle {
+    background:#13C2C2;
+    animation: line .15s ease-in;
+    height: 1px
+  
+}
+@keyframes line {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 375px;
+    }
+}
+.errorArea {
+    color: red;
+    font-size: 14px;
+    padding-top: 10px;
+
+}
+.errorLine {
+    background-color: red;
+    height: 1px
+}
